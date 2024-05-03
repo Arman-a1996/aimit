@@ -1,6 +1,7 @@
 {
   "name": "aimit",
   "version": "0.1.0",
+  "homepage": "http://Arman-a1996.github.io/aimit/en",
   "private": true,
   "scripts": {
     "start": "react-scripts start",
@@ -9,7 +10,9 @@
     "eject": "react-scripts eject",
     "eslint:fix": "eslint -c .eslintrc.json \"./**/*.{ts,tsx}\" --fix",
     "eslint": "eslint -c .eslintrc.json \"./**/*.{ts,tsx}\"",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build"
   },
   "dependencies": {
     "@ant-design/compatible": "^5.1.1",
@@ -59,6 +62,7 @@
     "eslint-plugin-simple-import-sort": "^8.0.0",
     "eslint-plugin-unused-imports": "^2.0.0",
     "file-loader": "^6.2.0",
+    "gh-pages": "^6.1.1",
     "husky": "^8.0.0",
     "prettier": "^2.8.0",
     "sass": "^1.56.1",
