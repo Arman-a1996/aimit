@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/aimit/static/css/main.be54bbd0.css",
-    "main.js": "/aimit/static/js/main.67a1e638.js",
-    "static/media/backgroundimg.svg": "/aimit/static/media/backgroundimg.213ea471336198a1b98d.svg",
-    "index.html": "/aimit/index.html",
-    "main.be54bbd0.css.map": "/aimit/static/css/main.be54bbd0.css.map",
-    "main.67a1e638.js.map": "/aimit/static/js/main.67a1e638.js.map"
+    "main.css": "/aimit/en/static/css/main.488f46c0.css",
+    "main.js": "/aimit/en/static/js/main.67a1e638.js",
+    "static/media/backgroundimg.svg": "/aimit/en/static/media/backgroundimg.213ea471336198a1b98d.svg",
+    "index.html": "/aimit/en/index.html",
+    "main.488f46c0.css.map": "/aimit/en/static/css/main.488f46c0.css.map",
+    "main.67a1e638.js.map": "/aimit/en/static/js/main.67a1e638.js.map"
   },
   "entrypoints": [
-    "static/css/main.be54bbd0.css",
+    "static/css/main.488f46c0.css",
     "static/js/main.67a1e638.js"
   ]
 }
