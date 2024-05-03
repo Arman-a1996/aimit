@@ -1,0 +1,29 @@
+@import "/src/styles/mixins";
+@import "/src/styles/pallete";
+
+.mainTab {
+    transition: 0.3s;
+    &:hover {
+        background: var(--gray);
+    }
+}
+.mainTabActive,
+.mainTab {
+    background: var(--white);
+    //todo padding: 20 15 changed to 20 12
+    padding: 20px 12px;
+    @media only screen and (max-width: 1600px) {
+        padding: 20px 10px;
+    }
+    cursor: pointer;
+    span {
+        @include fontRem(16, 600, 20);
+        color: var(--black);
+        @media only screen and (max-width: 1600px) {
+            @include fontRem(14, 600, 20);
+        }
+    }
+}
+.mainTabActive {
+    background: var(--gray);
+}

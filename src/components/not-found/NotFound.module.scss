@@ -1,0 +1,79 @@
+@import "src/styles/mixins";
+@import "src/styles/pallete";
+
+.notFoundWrapper {
+    background-color: var(--white);
+    @include flex-center;
+    @media only screen and (max-width: 1600px) {
+        zoom: 0.8;
+    }
+    .linWrapper {
+        top: 0;
+        height: unset !important;
+        position: absolute;
+        transform: translateX(-30px);
+        &.hideLine {
+            visibility: hidden;
+        }
+        svg {
+            max-width: 1100px;
+        }
+    }
+    .mapImage {
+        @include absoluteCenter(center);
+    }
+    .boxIcom {
+        animation: shake 0.5s linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        position: absolute;
+        cursor: grabbing;
+        @keyframes shake {
+            0% {
+                transform: translate(5px, 0) rotate(5deg);
+            }
+            50% {
+                transform: translate(-5px, 0) rotate(5deg);
+            }
+            100% {
+                transform: translate(0, 0) rotate(0);
+            }
+        }
+        .loseText {
+            position: absolute;
+            top: -70px;
+            left: -70px;
+            border-radius: 6px;
+            background-color: var(--black);
+            padding: 14px 30px;
+            color: var(--white);
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: -16px;
+                right: 14px;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 16px 14px 0 14px;
+                border-color: var(--black) transparent transparent transparent;
+            }
+        }
+    }
+    .dropArea {
+        pointer-events: none;
+    }
+    .info {
+        @include flex-center;
+        flex-direction: column;
+        button,
+        a {
+            margin-top: 45px;
+            min-width: 200px;
+            justify-content: center;
+        }
+    }
+    svg {
+        max-width: 100%;
+    }
+}

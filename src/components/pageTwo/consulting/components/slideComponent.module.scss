@@ -1,0 +1,103 @@
+@import "src/styles/mixins";
+@import "src/styles/pallete";
+
+.slider {
+  overflow: hidden;
+  .slideTrack {
+    @include flex-column;
+    &.ready {
+      animation: scroll 25s linear infinite;
+    }
+    @keyframes scroll {
+      0% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(calc(var(--scrollArea)));
+      }
+    }
+  }
+  .slide {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 30px;
+    img {
+      width: 232px;
+      height: auto;
+      object-fit: cover;
+      border-radius: 6px;
+      border-radius: 6px;
+      max-width: calc(50% - 15px);
+      display: block;
+      flex: 1 0 calc(-50% - 15px);
+      &:nth-child(odd) {
+        transform: translateY(-70px);
+      }
+    }
+  }
+}
+.wrapper{
+  padding-top: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  .businessColumn{
+    display: flex;
+    flex-direction: column;
+    div{
+      width: 100%;
+      gap: 10px;
+    }
+    h1{
+      font-size: 27px;
+      line-height: 35px;
+      color: #e9ce0b;
+      font-weight: bold;
+    }
+    p{
+      font-size: 16px;
+      line-height: 30px;
+      color: var(--white);
+      font-weight: 200;
+      margin-bottom: 0;
+    }
+    .buttonWrapper{
+      padding-top: 20px;
+      display: flex;
+      flex-direction: row;
+      gap:20px;
+      button {
+        width: fit-content;
+        display: block;
+        background-color: #fff;
+        color: #002a6e;
+        font-size: 1rem;
+        border: 2px solid transparent;
+        font-weight: 600;
+        text-transform: capitalize;
+        text-align: center;
+        padding: 0.75rem 2rem;
+        position: relative;
+        z-index: 1;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: transform 0.4s ease;
+        &:hover {
+          transform: translateY(-5px);
+        }
+      }
+      .scheduleButton{
+        background-color: #ff402d !important;
+        color: #fff;
+      }
+    }
+  }
+  .slideColumn{
+    width: 100%;
+    position: relative;
+    left: 10%;
+  }
+}

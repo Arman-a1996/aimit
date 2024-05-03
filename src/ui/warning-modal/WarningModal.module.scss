@@ -1,0 +1,93 @@
+@import "/src/styles/mixins";
+@import "/src/styles/pallete";
+
+.modalDialog {
+    max-width: 720px;
+    width: 100% !important;
+    :global {
+        .ant-modal-content {
+            padding: 40px 45px 35px;
+            text-align: left;
+            background-color: var(--secondWhite);
+            border-radius: 12px;
+            border: 1px solid var(--lightGray);
+            .ant-modal-close {
+                background: rgba(152, 162, 178, 0.1);
+                @include flex-center-vert;
+                justify-content: center;
+                border-radius: 3px;
+                position: absolute;
+                width: 26px;
+                height: 26px;
+                top: 15px;
+                right: 15px;
+                transition: 0.3s;
+                &:hover {
+                    transform: scale(1.1);
+                }
+                svg {
+                    display: block;
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+            .ant-modal-header {
+                background-color: transparent;
+            }
+            .ant-modal-title {
+                text-align: left;
+                margin-bottom: 30px;
+                @include fontRem(18, 700, 20);
+                background-color: var(--secondWhite);
+                color: var(--black);
+            }
+        }
+    }
+    &.receiveModal {
+        :global {
+            .ant-modal-content {
+                .ant-modal-title {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    &.payableModal {
+        :global {
+            .ant-modal-content {
+                .ant-modal-title {
+                    margin-bottom: 8px;
+                }
+                .ant-modal-body {
+                    button {
+                        min-width: 131px;
+                    }
+                }
+            }
+        }
+    }
+    .warningModalContent {
+        @include fontRem(14, 600, 20);
+        margin: 0 auto 35px auto;
+        width: 100%;
+        color: var(--black);
+    }
+    &.withTitle {
+        .warningModalContent {
+            @include fontRem(16, 500, 22);
+        }
+        :global {
+            .ant-modal-content {
+                padding-top: 50px;
+                border: 1px solid var(--lightGray);
+                .ant-modal-title {
+                    color: var(--black);
+                    margin-bottom: 17px;
+                }
+            }
+        }
+    }
+    button {
+        border-radius: 3px !important;
+    }
+}

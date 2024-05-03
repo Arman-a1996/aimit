@@ -1,0 +1,86 @@
+.pageTwoWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+
+  .wrapper {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    gap: 30px ;
+  }
+}
+.businessColumn{
+  width:30%;
+}
+
+.FormWrapper{
+  width: 100%;
+  height: 680px;
+}
+
+.input{
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  padding-left: 20px;
+  border: 0.9px solid #777;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  text-decoration: none !important;
+  list-style-type: none;
+  padding-block: 1px;
+  padding-inline: 2px;
+
+  text-transform: none;
+  text-indent: 18px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  appearance: auto;
+  -webkit-rtl-ordering: logical;
+  cursor: text;
+  text-rendering: auto;
+  letter-spacing: normal;
+  word-spacing: normal;
+  &:focus-visible {
+    border: 1px solid blue;
+  }
+}
+.nameAddress{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.form{
+  padding-top: 40px;
+}
+.submitButton{
+  background: #002b76;
+  color: #fff;
+  width: 208px;
+  border: 1px solid #002b76;
+  height: 49px;
+  border-radius: 10px;
+  margin-top: 7%;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.nameError,
+.emailError,
+.phoneError {
+  border: 1px solid red;
+}
+.inputWithError{
+   min-height: 75px;
+}
+
+.noResize {
+  resize: none;
+  height: 144px;
+}

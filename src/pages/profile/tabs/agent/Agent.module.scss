@@ -1,0 +1,79 @@
+@import "/src/styles/mixins";
+@import "/src/styles/pallete";
+.agentsEmpty {
+  padding-top: 25px;
+  color: var(--darkGrey);
+  @include fontRem(16, 700, 20);
+}
+.agentTopBlock {
+  padding-bottom: 20px;
+  .agentMainFilter {
+    button {
+      padding: 0 !important;
+    }
+  }
+}
+
+.filtersInfo {
+  @include fontRem(14, 600, 20);
+  color: var(--black);
+}
+
+.filtersCount {
+  @include fontRem(14, 600, 20);
+  color: var(--blue);
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+
+.carrierTopFilters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-right: 20px;
+  .carrierDayFilter {
+    background: var(--white);
+    border-radius: 6px;
+    border: 1px solid var(--lightBlue);
+    padding: 11px 17px;
+    box-shadow: 0px 4px 4px 0px rgba(102, 118, 149, 0.15);
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+      box-shadow: 0px 4px 10px 0px rgba(102, 118, 149, 0.15);
+      transform: scale(1.05);
+    }
+    .carrierDayText {
+      color: var(--black);
+      @include fontRem(14, 500, 20);
+    }
+    .leftColorBlockYellow,
+    .leftColorBlockRed,
+    .leftColorBlockBlue {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: var(--blueRadio);
+      border-top-left-radius: 6px;
+      border-bottom-left-radius: 6px;
+    }
+    .leftColorBlockYellow {
+      background: var(--brightYellow);
+    }
+    .leftColorBlockRed {
+      background: var(--persimmonRed);
+    }
+  }
+  & .active {
+    border: 1px solid #252733;
+  }
+}

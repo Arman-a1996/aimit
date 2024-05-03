@@ -1,0 +1,136 @@
+
+.item{
+  background-color: #fff;
+  transition: 0.5s;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px -4px;
+  position: relative;
+  min-height: 1px;
+  height: 90%;
+  box-sizing: border-box;
+  text-decoration: none !important;
+  list-style-type: none;
+  font-family: var(--main-font-family);
+  display: block;
+  unicode-bidi: isolate;
+  max-width: 300px;
+  margin: 10px;
+  padding: 20px;
+  align-self: center;
+  flex: 0 0 60;
+  .paragraphWrapper {
+    p {
+      &:last-of-type {
+        color: red;
+        font-size: 24px;
+        text-decoration: none;
+        padding-bottom: 5%;
+      }
+    }
+
+    width: 100%;
+    text-align: center;
+
+    h1 {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 25px;
+      text-transform: uppercase;
+    }
+    p{
+      padding-top: 5%;
+      text-decoration: line-through;
+      font-size: 17px;
+      font-weight: 700;
+      line-height: 25px;
+      text-transform: uppercase;
+    }
+    span{
+      font-size:13px;
+    }
+  }
+  &:hover {
+    color: white;
+    background: #002a6e;
+    transform: scale(1.05);
+    box-shadow: none;
+    cursor: pointer;
+     .orderNowBtn button{
+        background-color: white;
+        color: #002a6e;
+    }
+    &:after {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: none;
+
+    }
+  }
+  &:after {
+    background-color: transparent;
+    position: absolute;
+    inset: 0;
+    color: #fff;
+    font-size: 6rem;
+    border-radius: 10px;
+    font-weight: 800;
+    content: "";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+  }
+}
+  .parentContainer {
+    height: 200px;
+    overflow-y: auto;
+    scroll-margin: 1px;
+    padding-top: 20%;
+
+  .scrollableContent {
+    .checkPoint{
+      display: flex;
+      flex-direction: row;
+      justify-items: center;
+      gap: 5px;
+      height: 40px;
+      img{
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+}
+
+.parentContainer::-webkit-scrollbar {
+  width: 6px;
+}
+.parentContainer::-webkit-scrollbar-track {
+  background-color: #ece4e4;
+  border-radius: 3px;
+}
+.parentContainer::-webkit-scrollbar-thumb {
+  background: blue;
+  border-radius: 3px;
+}
+.orderNowBtn {
+  padding-top: 20%;
+  button {
+    margin: auto;
+    width: 70%;
+    background-color: #002a6e;
+    font-weight: 400;
+    font-size: 20px;
+    border: 2px solid transparent;
+    position: relative;
+    display: block;
+    z-index: 1;
+    height: 45px;
+    border-radius: 5px;
+    transition: all 300ms ease-in-out;
+    align-items: center;
+    color: white;
+  }
+}

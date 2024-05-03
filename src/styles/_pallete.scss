@@ -1,0 +1,79 @@
+:root {
+  --gray: #f0f2f5;
+  --white: #ffffff;
+  --black: #252733;
+  --danger: #ed6a5e;
+  --blue: #379fff;
+  --lightBlue: #d0d8e6;
+  --blueGray: #667695;
+  --darkGrey: #98a2b2;
+  --primaryBtn: #34a853;
+  --persimmonRed: #ff5454;
+  --blueRadio: #388dff;
+  --lightPurple: #dbe9fc;
+  --lightGray: #667695;
+  --secondWhite: #fff;
+  --activeLink: #379fff;
+  --secondLightBlue: #7c8db0;
+  --signinBlue: #379fff;
+  --grayBlack: #dde7f1;
+  --blueGrayWhite: #667695;
+  --uploaderBg: rgba(56, 141, 255, 0.1);
+  --blueBlack: #252733;
+  --dayBloom: #dbe9fc;
+  --lavenderGray: #c1cada;
+  --rateCrossed: #c1cada;
+  --mainWhite: #fff;
+  --lightBlue: #bdcee5;
+  --yellow: #eea10b;
+  --orange: #ff8718;
+  --warning: #ff902b;
+  --blueWhite: #379fff;
+  --scrollColor: #c1cada;
+  --headerInputColor: #dbdfe5;
+  --tableHoverColor: #e1e6ef;
+  --tableColumnColor: rgba(102, 118, 149, 0.1);
+  --scrollArea: -1152px;
+  --tableScrollThumb: #d6dbe4;
+  --tableScrollLine: #fafafa;
+  --drawerBg: #495061;
+  --longBorder: #f0f2f5;
+  --brightYellow: #fbbc05;
+  --paginationActive: #f0f2f5;
+  --searchHeaderColor: #e2ecfa;
+  --grayWhite: #98a2b2;
+  --disabledGray: #f0f2f5;
+  --drawerBorder: #d0d8e6;
+  --darkBlack: 0, 0, 0;
+}
+
+:root {
+  &.dark {
+    --white: #181a1e;
+    --black: #f0f2f5;
+    --gray: #0b0d11;
+    --lightGray: #f0f2f5;
+    --secondWhite: #0b0d11;
+    --signinBlue: #393c47;
+    --grayBlack: #252733;
+    --blueGrayWhite: #f0f2f5;
+    --uploaderBg: rgba(56, 141, 255, 0.5);
+    --blueBlack: #379fff;
+    --blueWhite: #ffffff;
+    --scrollColor: #676a73;
+    --tableHoverColor: #1d1e25;
+    --tableColumnColor: rgba(0, 0, 0, 0.5);
+    --tableScrollThumb: #1c1e25;
+    --tableScrollLine: #393c47;
+    --drawerBg: #181a1e;
+    --longBorder: #393c47;
+    --drawerBorder: #393c47;
+    --paginationActive: #1677ff;
+    --searchHeaderColor: #393c47;
+    --grayWhite: #fff;
+    --disabledGray: #85868c;
+    --rateCrossed: #6e7278;
+    --darkBlack: 255, 255, 255;
+  }
+}
+$black: var(--darkBlack);

@@ -1,0 +1,15 @@
+@import '/src/styles/pallete';
+@import '/src/styles/mixins';
+
+.tabPanelContainer {
+    width: 100%;
+    @include flex-center-vert;
+    background-color: var(--white);
+    justify-content: space-between;
+    border-bottom: 2px solid var(--longBorder);
+    gap: 10px;
+    padding-right: 33px;
+    .tabs {
+        @include flex-center-vert;
+    }
+}
