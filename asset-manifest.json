@@ -1,14 +1,35 @@
 {
   "files": {
-    "main.css": "/aimit/static/css/main.be54bbd0.css",
-    "main.js": "/aimit/static/js/main.f81769b2.js",
+    "main.css": "/aimit/static/css/main.35cc0f0d.css",
+    "main.js": "/aimit/static/js/main.8d62559c.js",
+    "static/media/8.png": "/aimit/static/media/8.8c7a72849d8661ec99e4.png",
+    "static/media/7.png": "/aimit/static/media/7.d8bc5f31d5b88716d7f9.png",
+    "static/media/1.png": "/aimit/static/media/1.b1e0aeed5eb5938d4003.png",
+    "static/media/5.png": "/aimit/static/media/5.028c6b7548c7e90fa7d9.png",
+    "static/media/6.png": "/aimit/static/media/6.0930b1b80ca9bfe493d5.png",
+    "static/media/2.png": "/aimit/static/media/2.c1077737b0fb0df34294.png",
+    "static/media/4.png": "/aimit/static/media/4.219251b2cfdf163f30cc.png",
+    "static/media/3.png": "/aimit/static/media/3.a127051884e4b30c559c.png",
+    "static/media/discuss.jpeg": "/aimit/static/media/discuss.2ebe79992f15c15965e7.jpeg",
+    "static/media/bbbb.png": "/aimit/static/media/bbbb.c7da112c328dc7bf9180.png",
+    "static/media/office.jpeg": "/aimit/static/media/office.27866a7f3d9eaeefdc76.jpeg",
+    "static/media/aaaa.png": "/aimit/static/media/aaaa.5806f664fddb1fe025ed.png",
+    "static/media/cccc.png": "/aimit/static/media/cccc.c77eb8975c05bc20fb7b.png",
+    "static/media/okMen.png": "/aimit/static/media/okMen.3e51893f02935c6a2f49.png",
     "static/media/backgroundimg.svg": "/aimit/static/media/backgroundimg.213ea471336198a1b98d.svg",
+    "static/media/girl.jpeg": "/aimit/static/media/girl.c95eb1af3ff91a84379c.jpeg",
+    "static/media/backgroundOK.jpeg": "/aimit/static/media/backgroundOK.03eb822693bcfb194e14.jpeg",
+    "static/media/review.jpeg": "/aimit/static/media/review.3ee1ba6710c7d7543be5.jpeg",
+    "static/media/third.png": "/aimit/static/media/third.237f5f8a032f9b7103fe.png",
+    "static/media/first.png": "/aimit/static/media/first.a53e5c9f8be96004f5cc.png",
+    "static/media/second.png": "/aimit/static/media/second.37206f6b11e09220adaf.png",
+    "static/media/checked.avif": "/aimit/static/media/checked.2cefc2979cc685e7d7e5.avif",
     "index.html": "/aimit/index.html",
-    "main.be54bbd0.css.map": "/aimit/static/css/main.be54bbd0.css.map",
-    "main.f81769b2.js.map": "/aimit/static/js/main.f81769b2.js.map"
+    "main.35cc0f0d.css.map": "/aimit/static/css/main.35cc0f0d.css.map",
+    "main.8d62559c.js.map": "/aimit/static/js/main.8d62559c.js.map"
   },
   "entrypoints": [
-    "static/css/main.be54bbd0.css",
-    "static/js/main.f81769b2.js"
+    "static/css/main.35cc0f0d.css",
+    "static/js/main.8d62559c.js"
   ]
 }
