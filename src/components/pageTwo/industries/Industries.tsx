@@ -1,11 +1,18 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-nocheck
+import automotive from '../../../assets/images/automotive.png';
+import banking from '../../../assets/images/banking.png';
+import digital from '../../../assets/images/digital.png';
+import eCommerce from '../../../assets/images/eCommerce.png';
+import healtcare from '../../../assets/images/healtcare.png';
+import hotel from '../../../assets/images/hotel.png';
+import logistics from '../../../assets/images/logistics.png';
+
 import styles from './Industries.module.scss';
 
 const Industries = () => {
   return (
-    <div
-      className={styles.industriesWrapper}
-      style={{ backgroundImage: `url('/assets/images/office.jpeg')`, backgroundRepeat: 'no-repeat' }}
-    >
+    <div className={styles.industriesWrapper} style={{ backgroundRepeat: 'no-repeat' }}>
       <div className={styles.industriesWrapperDark}>
         <div className={styles.heading}>
           <h1>Our Service Expands To A Plethora Of Industries</h1>
@@ -19,31 +26,31 @@ const Industries = () => {
         <div className={styles.imageContainer}>
           <div className={styles.firstImageWrapper}>
             <div>
-              <img src="/assets/images/banking.png" alt="banking" />
+              <img src={banking} alt="banking" />
             </div>
             <div>
-              <img src="/assets/images/automotive.png" alt="automotive" />
+              <img src={automotive} alt="automotive" />
             </div>
             <div>
-              <img src="/assets/images/banking.png" alt="banking" />
+              <img src={banking} alt="banking" />
             </div>
             <div>
-              <img src="/assets/images/digital.png" alt="digital" />
+              <img src={digital} alt="digital" />
             </div>
           </div>
 
           <div className={styles.secondImageWrapper}>
             <div>
-              <img src="/assets/images/healtcare.png" alt="healtcare" />
+              <img src={healtcare} alt="healtcare" />
             </div>
             <div>
-              <img src="/assets/images/hotel.png" alt="hotel" />
+              <img src={hotel} alt="hotel" />
             </div>
             <div>
-              <img src="/assets/images/logistics.png" alt="logistics" />
+              <img src={logistics} alt="logistics" />
             </div>
             <div>
-              <img src="/assets/images/eCommerce.png" alt="eCommerce" />
+              <img src={eCommerce} alt="eCommerce" />
             </div>
           </div>
         </div>

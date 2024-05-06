@@ -11,10 +11,7 @@ const UrgentDevForm = () => {
   return (
     <div className={styles.pageTwoWrapper}>
       <div className={styles.wrapper}>
-        <div
-          className={styles.FormWrapper}
-          style={{ backgroundImage: `url('/assets/images/girl.jpeg')`, backgroundRepeat: 'no-repeat' }}
-        />
+        <div className={styles.FormWrapper} style={{ backgroundRepeat: 'no-repeat' }} />
 
         <div className={styles.businessColumn}>
           <h1>Need An Urgent Website Developer for Your Business? Unlock a 23% Discounted Coupon.</h1>

@@ -1,11 +1,13 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-nocheck
+import review from '../../../assets/images/review.jpeg';
+import trustpilot from '../../../assets/images/trustpilot.png';
+
 import styles from './Review.module.scss';
 
 const Review = () => {
   return (
-    <div
-      className={styles.reviewWrapper}
-      style={{ backgroundImage: `url('/assets/images/backgroundOK.jpeg')`, backgroundRepeat: 'no-repeat' }}
-    >
+    <div className={styles.reviewWrapper} style={{ backgroundRepeat: 'no-repeat' }}>
       <div className={styles.header}>
         <h1>Why Our Clients Are Happy To Share Reviews?</h1>
       </div>
@@ -22,10 +24,10 @@ const Review = () => {
             <div className={styles.footer}>
               <div className={styles.review}>
                 <span>Allan</span>
-                <img src="/assets/images/review.jpeg" alt="review" />
+                <img src={review} alt="review" />
               </div>
               <div className={styles.greenReview}>
-                <img src="/assets/images/trustpilot.png" alt="trustpilot" />
+                <img src={trustpilot} alt="trustpilot" />
               </div>
             </div>
           </div>
@@ -42,10 +44,10 @@ const Review = () => {
             <div className={styles.footer}>
               <div className={styles.review}>
                 <span>Clark</span>
-                <img src="/assets/images/review.jpeg" alt="review" />
+                <img src={review} alt="review" />
               </div>
               <div className={styles.greenReview}>
-                <img src="/assets/images/trustpilot.png" alt="trustpilot" />
+                <img src={trustpilot} alt="trustpilot" />
               </div>
             </div>
           </div>

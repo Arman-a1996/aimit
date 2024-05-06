@@ -1,11 +1,12 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-nocheck
+import okMen from '../../../assets/images/okMen.png';
+
 import styles from './WhatSet.module.scss';
 
 const WhatSet = () => {
   return (
-    <div
-      className={styles.whatSetWrapper}
-      style={{ backgroundImage: `url('/assets/images/backgroundOK.jpeg')`, backgroundRepeat: 'no-repeat' }}
-    >
+    <div className={styles.whatSetWrapper} style={{ backgroundRepeat: 'no-repeat' }}>
       <div className={styles.heading}>
         <h1>What Sets Us Apart To Build Website?</h1>
         <p>
@@ -41,7 +42,7 @@ const WhatSet = () => {
           </div>
         </div>
         <div className={styles.okPicture}>
-          <img src={'/assets/images/okMen.png'} alt={''} />
+          <img src={okMen} alt={''} />
         </div>
       </div>
     </div>

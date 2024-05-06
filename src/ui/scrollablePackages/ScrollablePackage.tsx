@@ -1,4 +1,8 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-nocheck
 import React from 'react';
+
+import checked from '../../assets/images/checked.avif';
 
 import styles from './ScrollablePackage.module.scss';
 
@@ -17,7 +21,7 @@ const ScrollablePackage = ({ data }: any) => {
             return (
               <div className={styles.checkPoint}>
                 <div>
-                  <img src="/assets/images/checked.avif" alt="checked" />
+                  <img src={checked} alt="checked" />
                 </div>
                 <div>
                   <span>{listItem}</span>

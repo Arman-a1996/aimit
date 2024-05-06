@@ -10,19 +10,21 @@
     flex-direction: row;
     align-items: center;
     width: 100%;
-    gap: 30px ;
+    gap: 30px;
   }
 }
-.businessColumn{
-  width:30%;
+
+.businessColumn {
+  width: 30%;
 }
 
-.FormWrapper{
+.FormWrapper {
+  background-image: url("../../../../src/assets/images/girl.jpeg");
   width: 45%;
   height: 680px;
 }
 
-.input{
+.input {
   width: 100%;
   height: 50px;
   border-radius: 50px;
@@ -47,19 +49,23 @@
   text-rendering: auto;
   letter-spacing: normal;
   word-spacing: normal;
+
   &:focus-visible {
     border: 1px solid blue;
   }
 }
-.nameAddress{
+
+.nameAddress {
   display: flex;
   flex-direction: row;
   gap: 25px;
 }
-.form{
+
+.form {
   padding-top: 40px;
 }
-.submitButton{
+
+.submitButton {
   display: block;
   background-color: #ff402d;
   color: #fff;
@@ -82,6 +88,7 @@
 .phoneError {
   border: 1px solid red;
 }
-.inputWithError{
-   min-height: 75px;
+
+.inputWithError {
+  min-height: 75px;
 }

@@ -1,7 +1,10 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-nocheck
+import first from '../../../../assets/images/first.png';
+
 import styles from './slideComponent.module.scss';
 
 const FirstSlide = ({ onClick, className }: any) => {
-  console.log(className, 'className');
   return (
     <div className={styles.slideWrapper} onClick={onClick}>
       <div className={styles.slider}>
@@ -21,7 +24,7 @@ const FirstSlide = ({ onClick, className }: any) => {
               </div>
             </div>
             <div className={styles.slideColumn}>
-              <img src={'/assets/images/first.png'} alt={''} />
+              <img src={first} alt={''} />
             </div>
           </div>
         </div>

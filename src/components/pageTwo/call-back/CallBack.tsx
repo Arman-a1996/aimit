@@ -1,3 +1,5 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-nocheck
 import CallBackForm from '../call-back-form/CallBackForm';
 
 import styles from './CallBack.module.scss';
@@ -6,7 +8,9 @@ const CallBack = () => {
   return (
     <div
       className={styles.industriesWrapper}
-      style={{ backgroundImage: `url('/assets/images/discuss.jpeg')`, backgroundRepeat: 'no-repeat' }}
+      style={{
+        backgroundRepeat: 'no-repeat',
+      }}
     >
       <div className={styles.industriesWrapperDark}>
         <div className={styles.wrapper}>

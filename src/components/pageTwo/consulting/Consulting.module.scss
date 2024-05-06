@@ -17,18 +17,19 @@
   line-height: 1;
   margin-top: 25%;
 }
+
 .rightButton {
   padding-left: 50px;
 }
 
-.leftButton{
+.leftButton {
   padding-right: 50px;
 
 }
 
 .leftButton:hover,
 .rightButton:hover {
-  color:blue;
+  color: blue;
 }
 
 .slider {
@@ -54,15 +55,17 @@
 .slide.active {
   opacity: 1 !important;
 }
-.consultingWrapper{
+
+.consultingWrapper {
   background: #2a2b2c;
   position: relative;
   padding: 70px 0;
   display: flex;
   justify-content: center;
+
   &:before {
     content: "";
-    background-image: url('../../../../public/assets/images/backgroundimg.svg');
+    background-image: url('../../../../src/assets/images/backgroundimg.svg');
     width: 100%;
     height: 100%;
     position: absolute;
@@ -72,37 +75,45 @@
     background-size: cover;
     filter: brightness(0) invert(1);
   }
-  .slideWrapper{
+
+  .slideWrapper {
     max-height: 600px;
     display: flex;
     flex-direction: column;
+
     span {
       transition: color 0.3s ease-in-out;
       color: white;
       width: 80px;
       height: 80px;
       font-size: 5.5rem;
+
       &:hover {
         color: #ff402d;
       }
+
       &:first-child {
         transform: translateY(-50%);
       }
+
       &:last-child {
         transform: translateY(-50%);
       }
     }
   }
-  .h1Container{
+
+  .h1Container {
     text-align: center;
-    .heading1{
+
+    .heading1 {
       color: var(--white);
       font-size: 46px;
       font-weight: bold;
       margin: auto;
       width: 60%;
     }
-    .heading2{
+
+    .heading2 {
       color: var(--white);
       font-size: 46px;
       font-weight: bold;

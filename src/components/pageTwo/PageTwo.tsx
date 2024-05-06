@@ -1,5 +1,19 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-nocheck
 import { useState } from 'react';
 
+import im1 from '../../assets/images/1.png';
+import im2 from '../../assets/images/2.png';
+import im3 from '../../assets/images/3.png';
+import im4 from '../../assets/images/4.png';
+import im5 from '../../assets/images/5.png';
+import im6 from '../../assets/images/6.png';
+import im7 from '../../assets/images/7.png';
+import im8 from '../../assets/images/8.png';
+import integrate from '../../assets/images/integrate.png';
+import loadTime from '../../assets/images/loadTime.png';
+import manage from '../../assets/images/manage.png';
+import seo from '../../assets/images/seo.png';
 import Card from '../../ui/card/Card';
 import ScrollablePackage from '../../ui/scrollablePackages/ScrollablePackage';
 import Slide from '../../ui/slider/Slide';
@@ -16,125 +30,19 @@ import WhatSet from './whatSets/WhatSet';
 
 import styles from './PageTwo.module.scss';
 
-const all = [
-  '/assets/images/6.png',
-  '/assets/images/7.png',
-  '/assets/images/8.png',
-  '/assets/images/1.png',
-  '/assets/images/2.png',
-  '/assets/images/3.png',
-  '/assets/images/4.png',
-  '/assets/images/5.png',
-];
+const all = [im6, im2, im3, im4, im5, im1, im7, im8];
 
-const beauty = [
-  '/assets/images/1.png',
-  '/assets/images/2.png',
-  '/assets/images/3.png',
-  '/assets/images/4.png',
-  '/assets/images/7.png',
-  '/assets/images/8.png',
-  '/assets/images/5.png',
-  '/assets/images/6.png',
-];
+const beauty = [im6, im2, im3, im4, im5, im1, im7, im8];
 
-const fitness = [
-  '/assets/images/6.png',
-
-  '/assets/images/1.png',
-  '/assets/images/2.png',
-
-  '/assets/images/5.png',
-  '/assets/images/3.png',
-  '/assets/images/4.png',
-  '/assets/images/7.png',
-  '/assets/images/8.png',
-];
-const food = [
-  '/assets/images/3.png',
-  '/assets/images/4.png',
-  '/assets/images/1.png',
-  '/assets/images/2.png',
-
-  '/assets/images/5.png',
-  '/assets/images/6.png',
-  '/assets/images/7.png',
-  '/assets/images/8.png',
-];
-const health = [
-  '/assets/images/4.png',
-
-  '/assets/images/3.png',
-
-  '/assets/images/6.png',
-  '/assets/images/7.png',
-  '/assets/images/5.png',
-  '/assets/images/1.png',
-  '/assets/images/2.png',
-  '/assets/images/8.png',
-];
-const noneProfit = [
-  '/assets/images/6.png',
-  '/assets/images/7.png',
-  '/assets/images/1.png',
-  '/assets/images/2.png',
-
-  '/assets/images/8.png',
-  '/assets/images/3.png',
-  '/assets/images/4.png',
-  '/assets/images/5.png',
-];
-const education = [
-  '/assets/images/7.png',
-  '/assets/images/4.png',
-  '/assets/images/5.png',
-  '/assets/images/1.png',
-  '/assets/images/6.png',
-  '/assets/images/2.png',
-  '/assets/images/3.png',
-
-  '/assets/images/8.png',
-];
-const cbd = [
-  '/assets/images/4.png',
-  '/assets/images/6.png',
-  '/assets/images/7.png',
-  '/assets/images/8.png',
-  '/assets/images/2.png',
-  '/assets/images/3.png',
-  '/assets/images/1.png',
-  '/assets/images/5.png',
-];
-const eCommerce = [
-  '/assets/images/1.png',
-  '/assets/images/2.png',
-  '/assets/images/5.png',
-  '/assets/images/6.png',
-  '/assets/images/3.png',
-  '/assets/images/4.png',
-  '/assets/images/7.png',
-  '/assets/images/8.png',
-];
-const realEstate = [
-  '/assets/images/7.png',
-  '/assets/images/8.png',
-  '/assets/images/1.png',
-  '/assets/images/2.png',
-  '/assets/images/3.png',
-  '/assets/images/4.png',
-  '/assets/images/5.png',
-  '/assets/images/6.png',
-];
-const auto = [
-  '/assets/images/1.png',
-  '/assets/images/4.png',
-  '/assets/images/5.png',
-  '/assets/images/6.png',
-  '/assets/images/2.png',
-  '/assets/images/3.png',
-  '/assets/images/7.png',
-  '/assets/images/8.png',
-];
+const fitness = [im6, im2, im3, im4, im5, im1, im7, im8];
+const food = [im6, im2, im3, im4, im5, im1, im7, im8];
+const health = [im6, im2, im3, im4, im5, im1, im7, im8];
+const noneProfit = [im6, im2, im3, im4, im5, im1, im7, im8];
+const education = [im6, im2, im3, im4, im5, im1, im7, im8];
+const cbd = [im6, im2, im3, im4, im5, im1, im7, im8];
+const eCommerce = [im6, im2, im3, im4, im5, im1, im7, im8];
+const realEstate = [im6, im2, im3, im4, im5, im1, im7, im8];
+const auto = [im6, im2, im3, im4, im5, im1, im7, im8];
 const images: any = {
   All: all,
   Beauty: beauty,
@@ -297,22 +205,22 @@ const packages: any = [
 
 const websitesData = [
   {
-    img: '/assets/images/seo.png',
+    img: seo,
     title: 'Seo-Friendly & responsive',
     text: 'What good is a website if no one ever views it? To be visible to your target audience, your website must be responsive and SEO-friendly.',
   },
   {
-    img: '/assets/images/integrate.png',
+    img: integrate,
     title: 'App Integrations',
     text: 'Our incorporated app integrations help retailers save time and money by reducing administrative tasks and boosting user experience and functionality.',
   },
   {
-    img: '/assets/images/manage.png',
+    img: manage,
     title: 'Content Management System',
     text: "Your E-commerce platform's administrator has the authority to alter or add content. The administration interface is more basic and user-friendly.",
   },
   {
-    img: '/assets/images/loadTime.png',
+    img: loadTime,
     title: 'Quick Load Time',
     text: 'You can achieve lightning-fast load speeds and provide your customers a terrific online buying experience with Custom Website Development',
   },
